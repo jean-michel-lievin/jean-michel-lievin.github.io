@@ -442,66 +442,114 @@
         <p>Articles published on the Medium platform.</p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+        <div class="articles-container">
+          <div class="swiper articles-slider init-swiper" data-aos="fade-up" data-aos-delay="400">
 
-        <div class="row g-4">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": 1,
+                "spaceBetween": 30,
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "768": {
+                    "slidesPerView": 2
+                  },
+                  "992": {
+                    "slidesPerView": 3
+                  }
+                }
+              }
+            </script>
 
-          <!-- Card 1 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/img/article/sustainable-tourism-chatbot.webp" class="img-fluid"
-                  alt="sustainable-tourism-chatbot" loading="lazy">
+            <div class="swiper-wrapper">
+              <!-- Slide Article 1 -->
+              <div class="swiper-slide">
+                <div class="service-item">
+                  <div class="icon">
+                    <img src="assets/img/article/dbt.webp" class="img-fluid" alt="analogy dbt - restaurant"
+                      loading="lazy">
+                  </div>
+                  <h3>Understanding dbt through the restaurant analogy</h3>
+                  <p>Explaining the architecture of a modern data project using the analogy of a
+                    restaurant.</p>
+                  <div class="card-links">
+                    <a href="https://medium.com/@tabodino/understanding-dbt-what-if-your-data-project-were-a-michelin-starred-restaurant-2570fa6f07a3"
+                      target="_blank" class="link-item">
+                      Read the article
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <h3>Building a chatbot with AWS Bedrock</h3>
-              <p>Chatbot for recommending sustainable travel destinations using AWS Bedrock.</p>
-              <div class="card-links">
-                <a href="https://medium.com/@tabodino/creating-a-sustainable-tourism-destination-recommendation-chatbot-with-aws-bedrock-41337db49461"
-                  target="_blank" class="link-item">
-                  Read the article
-                  <i class="bi bi-arrow-right"></i>
-                </a>
+
+              <!-- Slide Article 2 -->
+              <div class="swiper-slide">
+                <div class="service-item">
+                  <div class="icon">
+                    <img src="assets/img/article/sustainable-tourism-chatbot.webp" class="img-fluid"
+                      alt="sustainable-tourism-chatbot" loading="lazy">
+                  </div>
+                  <h3>Building a chatbot with AWS Bedrock</h3>
+                  <p>Chatbot for recommending sustainable travel destinations using AWS Bedrock.</p>
+                  <div class="card-links">
+                    <a href="https://medium.com/@tabodino/creating-a-sustainable-tourism-destination-recommendation-chatbot-with-aws-bedrock-41337db49461"
+                      target="_blank" class="link-item">
+                      Read the article
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide Article 3 -->
+              <div class="swiper-slide">
+                <div class="service-item">
+                  <div class="icon">
+                    <img src="assets/img/article/boilrpy.webp" class="img-fluid" alt="Boilrpy" loading="lazy">
+                  </div>
+                  <h3>Boilrpy: A Boilerplate generator for Python projects</h3>
+                  <p>Simplify the setup of your Python projects with Boilrpy.</p>
+                  <div class="card-links">
+                    <a href="https://medium.com/@tabodino/boilrpy-a-python-boilerplate-07fae73b8ef9" target="_blank"
+                      class="link-item">
+                      Read the article
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide Article 4 -->
+              <div class="swiper-slide">
+                <div class="service-item">
+                  <div class="icon">
+                    <img src="assets/img/article/symfony7-clock.webp" class="img-fluid" alt="symfony7-clock"
+                      loading="lazy">
+                  </div>
+                  <h3>Clock component with Symfony 7</h3>
+                  <p>Master time in your Symfony applications using the Clock component.</p>
+                  <div class="card-links">
+                    <a href="https://medium.com/@tabodino/clock-component-in-symfony-7-512d894c26da" target="_blank"
+                      class="link-item">
+                      Read the article
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div><!-- End Service Item -->
-
-          <!-- Card 2 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/img/article/boilrpy.webp" class="img-fluid" alt="Boilrpy" loading="lazy">
-              </div>
-              <h3>Boilrpy: A Boilerplate generator for Python projects</h3>
-              <p>Simplify the setup of your Python projects with Boilrpy.</p>
-              <div class="card-links">
-                <a href="https://medium.com/@tabodino/boilrpy-a-python-boilerplate-07fae73b8ef9" target="_blank"
-                  class="link-item">
-                  Read the article
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <!-- Card 3 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/img/article/symfony7-clock.webp" class="img-fluid" alt="symfony7-clock" loading="lazy">
-              </div>
-              <h3>Clock component with Symfony 7</h3>
-              <p>Master time in your Symfony applications using the Clock component.</p>
-              <div class="card-links">
-                <a href="https://medium.com/@tabodino/clock-component-in-symfony-7-512d894c26da" target="_blank"
-                  class="link-item">
-                  Read the article
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-        </div>
-      </div>
+            <div class="swiper-pagination"></div>
+          </div>
     </section><!-- /Services Section -->
 
 
